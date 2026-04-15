@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Pricing - Turbo Alting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            color: #00ff88;
+            background-color: #0a0e27;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #0f1423;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 0 10px rgba(0, 255, 136, 0.15);
+            border-bottom: 2px solid #00ff88;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #00ff88;
+            text-shadow: 0 0 10px #00ff88;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #00ff88;
+            text-decoration: none;
+            transition: all 0.3s;
+            position: relative;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+            text-shadow: 0 0 15px #00ffff;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Page Title */
+        .page-title {
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 2px solid #00ff88;
+        }
+
+        .page-title h1 {
+            font-size: 3rem;
+            color: #00ffff;
+            text-shadow: 0 0 20px #00ffff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 4rem 2rem;
+            background-color: #0a0e27;
+            color: #00ff88;
+            border-bottom: 2px solid #00ff88;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #00ffff;
+            text-shadow: 0 0 15px #00ffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .pricing-section {
+            margin-bottom: 4rem;
+        }
+
+        .pricing-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #00ffff;
+            border-bottom: 2px solid #00ff88;
+            padding-bottom: 0.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .pricing-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-list li {
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            background-color: transparent;
+            border-left: 3px solid #00ff88;
+            border-radius: 4px;
+            color: #00ff88;
+            font-family: 'Courier New', monospace;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .pricing-list li:hover {
+            background-color: rgba(0, 255, 136, 0.1);
+            border-left-color: #00ffff;
+            box-shadow: 0 0 5px rgba(0, 255, 136, 0.15);
+        }
+
+        .price-tag {
+            color: #00ff88;
+            font-weight: bold;
+            float: right;
+            text-shadow: 0 0 5px rgba(0, 255, 136, 0.8);
+        }
+
+        .info-box {
+            background-color: rgba(0, 255, 136, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            border-left: 4px solid #00ffff;
+            border: 2px solid #00ff88;
+            color: #00ff88;
+        }
+
+        .info-box p {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .info-box strong {
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+
+            .page-title h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            nav .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">⚡ Turbo Alting</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <h1>Services & Pricing</h1>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Our Pricing & Services</h2>
+            
+            <div class="pricing-section">
+                <h3>One-Time Purchases</h3>
+                <ul class="pricing-list">
+                    <li>Turbo Alting Purchase 1 <span class="price-tag">350 Robux</span></li>
+                    <li>Turbo Alting Purchase 2 <span class="price-tag">350 Robux</span></li>
+                    <li>Turbo Alting Purchase 3 <span class="price-tag">350 Robux</span></li>
+                    <li>Turbo Alting Purchase 4 (Free Discount) <span class="price-tag">250 Robux</span></li>
+                    <li>Turbo Alting Purchase 5 (Free Discount) <span class="price-tag">250 Robux</span></li>
+                </ul>
+            </div>
+
+            <div class="pricing-section">
+                <h3>Multi-Day Packages</h3>
+                <ul class="pricing-list">
+                    <li>2 Days of Consecutive Turbo Alting <span class="price-tag">450 Robux</span></li>
+                    <li>3 Days of Consecutive Turbo Alting <span class="price-tag">650 Robux</span></li>
+                    <li>One Week of Consecutive Turbo Alting <span class="price-tag">1,250 Robux</span></li>
+                    <li>Two Weeks of Consecutive Turbo Alting <span class="price-tag">2,000 Robux</span></li>
+                    <li>One Month of Consecutive Turbo Alting <span class="price-tag">4,200 Robux</span></li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <p><strong>⚠️ Important:</strong> When purchasing an Alting Service over a day, we only sell one SSU (SSU's only). We do not alter when your player count is low!</p>
+            </div>
+
+            <div class="info-box" style="margin-top: 2rem;">
+                <p><strong>💡 Why are multi-day prices higher?</strong></p>
+                <p>It takes time to get a server full under a certain metric in a small community. Just imagine having to alt the same server for 30 days in a row!</p>
+                <p style="margin-top: 1rem;">For purchases over 3 days, our entire Turbo Alting Team comes together and splits up who is alting what day to ensure quality and reliability.</p>
+            </div>
+
+            <div class="info-box" style="margin-top: 2rem;">
+                <p><strong>🎁 Discount Offer:</strong> If you're using a discount code, purchases are cut to <strong>75%</strong> of the original price!</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
