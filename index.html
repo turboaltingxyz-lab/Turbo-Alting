@@ -25,7 +25,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+            box-shadow: 0 0 10px rgba(0, 255, 136, 0.15);
             border-bottom: 2px solid #00ff88;
         }
 
@@ -42,7 +42,7 @@
             font-size: 1.8rem;
             font-weight: bold;
             color: #00ff88;
-            text-shadow: 0 0 10px #00ff88;
+            text-shadow: 0 0 5px #00ff88;
             letter-spacing: 2px;
         }
 
@@ -64,7 +64,7 @@
 
         nav a:hover {
             color: #00ffff;
-            text-shadow: 0 0 15px #00ffff;
+            text-shadow: 0 0 8px #00ffff;
         }
 
         /* Container */
@@ -98,7 +98,7 @@
             position: relative;
             overflow: hidden;
             margin: 2rem;
-            box-shadow: 0 0 30px rgba(0, 255, 136, 0.4), inset 0 0 30px rgba(0, 255, 136, 0.1);
+            box-shadow: 0 0 15px rgba(0, 255, 136, 0.2), inset 0 0 15px rgba(0, 255, 136, 0.05);
         }
 
         .hero::before {
@@ -123,7 +123,7 @@
             margin-bottom: 1rem;
             animation: fadeInDown 0.8s ease-in;
             color: #00ffff;
-            text-shadow: 0 0 20px #00ffff, 0 0 40px #00ff88;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ff88;
             letter-spacing: 3px;
             text-transform: uppercase;
             position: relative;
@@ -154,7 +154,7 @@
             font-size: 1rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+            box-shadow: 0 0 5px rgba(0, 255, 136, 0.25);
             font-family: 'Courier New', monospace;
         }
 
@@ -163,19 +163,19 @@
             color: #0a0e27;
             text-shadow: none;
             transform: translateY(-2px);
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+            box-shadow: 0 0 10px rgba(0, 255, 136, 0.4);
         }
 
         .btn-secondary {
             border-color: #00ffff;
             color: #00ffff;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            box-shadow: 0 0 5px rgba(0, 255, 255, 0.25);
         }
 
         .btn-secondary:hover {
             background-color: #00ffff;
             color: #0a0e27;
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
         }
 
         /* Features Section */
@@ -191,7 +191,7 @@
             font-size: 2.5rem;
             margin-bottom: 3rem;
             color: #00ffff;
-            text-shadow: 0 0 15px #00ffff;
+            text-shadow: 0 0 8px #00ffff;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -207,7 +207,7 @@
             padding: 2rem;
             border: 2px solid #00ff88;
             border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+            box-shadow: 0 0 8px rgba(0, 255, 136, 0.15);
             transition: all 0.3s;
             position: relative;
         }
@@ -232,7 +232,7 @@
 
         .feature-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 0 25px rgba(0, 255, 136, 0.6);
+            box-shadow: 0 0 12px rgba(0, 255, 136, 0.3);
             border-color: #00ffff;
         }
 
@@ -317,14 +317,14 @@
         .pricing-list li:hover {
             background-color: rgba(0, 255, 136, 0.1);
             border-left-color: #00ffff;
-            box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+            box-shadow: 0 0 5px rgba(0, 255, 136, 0.15);
         }
 
         .price-tag {
             color: #00ff88;
             font-weight: bold;
             float: right;
-            text-shadow: 0 0 5px rgba(0, 255, 136, 0.8);
+            text-shadow: 0 0 3px rgba(0, 255, 136, 0.4);
         }
 
         .info-box {
@@ -344,7 +344,7 @@
 
         .info-box strong {
             color: #00ffff;
-            text-shadow: 0 0 10px #00ffff;
+            text-shadow: 0 0 5px #00ffff;
         }
 
         /* Animations */
@@ -371,6 +371,60 @@
         }
 
         /* Responsive */
+        /* Promo Banner */
+        .promo-banner {
+            background: linear-gradient(135deg, #00ff88 0%, #00ffff 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 3px solid #00ffff;
+            border-bottom: 3px solid #00ffff;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3), inset 0 0 20px rgba(0, 255, 255, 0.1);
+        }
+
+        .promo-banner h2 {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #0a0e27;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+            margin-bottom: 1rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            animation: pulse 2s infinite;
+        }
+
+        .promo-banner p {
+            font-size: 2rem;
+            color: #0a0e27;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .promo-banner .price-highlight {
+            font-size: 5rem;
+            font-weight: bold;
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ff88;
+            margin: 1rem 0;
+            letter-spacing: 2px;
+        }
+
+        .promo-banner .countdown {
+            font-size: 1.5rem;
+            color: #0a0e27;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
         @media (max-width: 768px) {
             nav ul {
                 gap: 1rem;
@@ -386,6 +440,18 @@
 
             .section-title {
                 font-size: 1.8rem;
+            }
+
+            .promo-banner h2 {
+                font-size: 2.5rem;
+            }
+
+            .promo-banner p {
+                font-size: 1.5rem;
+            }
+
+            .promo-banner .price-highlight {
+                font-size: 3rem;
             }
 
             nav .container {
@@ -412,8 +478,20 @@
     <!-- Hero Section -->
     <section class="hero">
         <h1>Turbo Alting</h1>
-        <p>ERLC Alt Service - High Quality, Reliable, Lightning Fast</p>
-        <a href="https://discord.gg/pjy4VGm8gF" class="btn">Get Your Alts Now</a>
+        <p>Premium Roblox ERLC Alt Service - High Quality, Reliable, Lightning Fast</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="https://www.roblox.com/games/136840603029362/Turbo-Alting-Services#!/store" class="btn">Visit Store</a>
+            <a href="https://discord.gg/pjy4VGm8gF" class="btn btn-secondary">Discord</a>
+        </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner">
+        <h2>🚨 LIMITED TIME OFFER 🚨</h2>
+        <p>FIRST 25 ORDERS ONLY!</p>
+        <div class="price-highlight">150R$</div>
+        <p style="font-size: 1.8rem; margin: 0;"> Alts at unimagineable Price!</p>
+        <div class="countdown"> Don't miss out! Order now before this deal expires!</div>
     </section>
 
     <!-- CTA Section -->
