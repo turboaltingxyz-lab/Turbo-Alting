@@ -371,57 +371,71 @@
         }
 
         /* Responsive */
-        /* Promo Banner */
-        .promo-banner {
-            background: linear-gradient(135deg, #00ff88 0%, #00ffff 100%);
-            padding: 3rem 2rem;
+
+        /* Floating Island */
+        .floating-island {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #00ffdd;
+            border: 3px solid #00ffdd;
+            border-radius: 12px;
+            padding: 1.5rem;
+            width: 320px;
+            box-shadow: 0 0 30px rgba(0, 255, 221, 0.6), 0 0 50px rgba(255, 0, 255, 0.3);
+            z-index: 1000;
+            animation: float 3s ease-in-out infinite;
             text-align: center;
-            border-top: 3px solid #00ffff;
-            border-bottom: 3px solid #00ffff;
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3), inset 0 0 20px rgba(0, 255, 255, 0.1);
+            backdrop-filter: blur(2px);
         }
 
-        .promo-banner h2 {
-            font-size: 4rem;
-            font-weight: bold;
-            color: #0a0e27;
-            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
-            margin-bottom: 1rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            animation: pulse 2s infinite;
-        }
-
-        .promo-banner p {
-            font-size: 2rem;
-            color: #0a0e27;
-            font-weight: bold;
+        .floating-island h2 {
+            color: #000;
+            font-size: 1.8rem;
             margin-bottom: 0.5rem;
+            text-transform: uppercase;
             letter-spacing: 2px;
-        }
-
-        .promo-banner .price-highlight {
-            font-size: 5rem;
             font-weight: bold;
-            color: #ff00ff;
-            text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ff88;
-            margin: 1rem 0;
-            letter-spacing: 2px;
         }
 
-        .promo-banner .countdown {
-            font-size: 1.5rem;
-            color: #0a0e27;
+        .floating-island .subtitle {
+            color: #000;
+            font-size: 1rem;
+            margin-bottom: 1rem;
             font-weight: bold;
-            margin-top: 1rem;
+            letter-spacing: 1px;
         }
 
-        @keyframes pulse {
+        .floating-island .price {
+            color: #ff0088;
+            font-weight: bold;
+            font-size: 3.5rem;
+            text-shadow: 0 0 10px #ff0088;
+            margin: 0.75rem 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .floating-island .tagline {
+            color: #000;
+            font-size: 1rem;
+            margin: 0.75rem 0;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .floating-island .cta {
+            color: #000;
+            font-size: 0.95rem;
+            margin-top: 0.75rem;
+            font-weight: bold;
+        }
+
+        @keyframes float {
             0%, 100% {
-                transform: scale(1);
+                transform: translateY(0px);
             }
             50% {
-                transform: scale(1.05);
+                transform: translateY(-15px);
             }
         }
 
@@ -442,21 +456,20 @@
                 font-size: 1.8rem;
             }
 
-            .promo-banner h2 {
-                font-size: 2.5rem;
-            }
-
-            .promo-banner p {
-                font-size: 1.5rem;
-            }
-
-            .promo-banner .price-highlight {
-                font-size: 3rem;
-            }
-
             nav .container {
                 flex-direction: column;
                 gap: 1rem;
+            }
+
+            .floating-island {
+                bottom: 15px;
+                right: 15px;
+                width: 270px;
+                padding: 1rem;
+            }
+
+            .floating-island .price {
+                font-size: 2.8rem;
             }
         }
     </style>
@@ -485,15 +498,6 @@
         </div>
     </section>
 
-    <!-- Promo Banner -->
-    <section class="promo-banner">
-        <h2>🚨 LIMITED TIME OFFER 🚨</h2>
-        <p>FIRST 25 ORDERS ONLY!</p>
-        <div class="price-highlight">150R$</div>
-        <p style="font-size: 1.8rem; margin: 0;"> Alts at unimagineable Price!</p>
-        <div class="countdown"> Don't miss out! Order now before this deal expires!</div>
-    </section>
-
     <!-- CTA Section -->
     <section style="padding: 4rem 2rem; text-align: center; background-color: #0f1423; border-top: 2px solid #00ff88; border-bottom: 2px solid #00ff88;">
         <div class="container">
@@ -502,5 +506,14 @@
             <a href="contact.html" class="btn btn-secondary">Order Now</a>
         </div>
     </section>
+
+    <!-- Floating Island - Limited Time Offer -->
+    <div class="floating-island">
+        <h2>🔔 LIMITED TIME OFFER 🔔</h2>
+        <p class="subtitle">FIRST 25 ORDERS ONLY!</p>
+        <div class="price">150R$</div>
+        <p class="tagline">Alts at unimaginable Price!</p>
+        <p class="cta">Don't miss out! Order now before this deal expires!</p>
+    </div>
 </body>
 </html>
